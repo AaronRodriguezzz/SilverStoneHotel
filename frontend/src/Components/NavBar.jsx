@@ -48,6 +48,7 @@ function NavBar({scrollToRooms,scrollToFooter,scrollToHotelAreas}) {
 
     return(
         <div className='navigation'>
+
              {/* Navigation Bar */}
                 <motion.nav
                     style={{ backgroundColor: isScrolled ? `rgba(42, 75, 96, ${scrollValue})` : "transparent" }}
@@ -56,11 +57,11 @@ function NavBar({scrollToRooms,scrollToFooter,scrollToHotelAreas}) {
                     transition={{ duration: 0.8 }}
                     >
                         <ul>
-                        <Link to='/'>  
+                        <Link to='/' className="no-underline">  
                             <li onClick={scrollToRooms}>OUR ROOMS</li>
                         </Link>
                         
-                        <Link to='/Amenities'>  
+                        <Link to='/Amenities' className="no-underline">  
                             <li onClick={scrollToHotelAreas}>HOTEL AREAS</li>
                         </Link>
 
@@ -74,17 +75,16 @@ function NavBar({scrollToRooms,scrollToFooter,scrollToHotelAreas}) {
                             transition={{ duration: 2 }}
                         >
                          <Link to='/' className="no-underline">
-
+                            <img src='/photos/logo.png' alt='Logo' />
                             <h5>THE</h5>
                             <h2>SILVERSTONE</h2>
                             <h5>HOTEL</h5>
-
                         </Link>
 
                         </motion.div>
 
                         <ul>
-                        <Link to='/restaurant'>  
+                        <Link to='/restaurant' className="no-underline">  
                             <li>RESTAURANT</li>
                         </Link>
 

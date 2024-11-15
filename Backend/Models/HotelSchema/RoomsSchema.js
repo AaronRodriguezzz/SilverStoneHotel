@@ -13,13 +13,21 @@ const roomSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
+    roomLimit: {
+        type: Number,
+        required: true,
+    },
+    maximumGuest: {
+        type: Number,
+        required: true,
+    },
     key: {
         type: Number,
         required: true,
         unique: true,
-    },
+    },  
 }, { timestamps: true,  collection: 'RoomInfo'});
 
-const Room = mongoose.model('SilverStone hotel', roomSchema);
+const Room = mongoose.model('RoomInfo', roomSchema);
 
 module.exports = Room;

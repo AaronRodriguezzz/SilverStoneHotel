@@ -28,16 +28,12 @@ const RoomInfo = () =>{
             
         } 
 
-        fetchDate();
+        fetchDate()
     }, [])   
-
-    const handleBg = () => {
-        console.log(roomInfos.roomType);
-    }
 
     return(
         <>
-            < NavBar scrollToRooms={scrollToRooms} scrollToFooter={scrollToFooter} scrollToHotelAreas={scrollToHotelAreas}/>
+            <NavBar scrollToRooms={scrollToRooms} scrollToFooter={scrollToFooter} scrollToHotelAreas={scrollToHotelAreas}/>
             <div className="roomInfo-container"   style={{backgroundImage: `url('/photos/z${roomInfos.roomType}.jpg')`}}>
                 <div className='cover-color'>
 
@@ -46,16 +42,11 @@ const RoomInfo = () =>{
                         <h5>₱{roomInfos.price} only</h5>
                         <p>{roomInfos.roomDescription}</p>
 
-                        <button>RESERVE NOW</button>
+                        <button>BOOK NOW</button>
                     </div>
                 </div>
             </div>
 
-            <div className='reservation-form'>
-                <div className='form-container'>
-                    <h1>Reserve Form</h1>
-                </div>
-            </div>
 
             <Footer ref={targetRefFooter}/>
 

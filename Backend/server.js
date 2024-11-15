@@ -2,7 +2,8 @@ require('dotenv').config()
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
-const RenderRooms = require('./Routes/RenderingRoomRoutes')
+const RenderRooms = require('./Routes/HotelRoutes/RenderingRoomRoutes');
+const Reservation = require('./Routes/HotelRoutes/ReservationRoutes')
 
 const app = express();
 
@@ -32,6 +33,7 @@ app.use((req,res,next) => {
 
 //Routes Usage
 app.use(RenderRooms);
+app.use(Reservation);
 
 app.get('/', (req, res) => {
     res.json({mssg: 'Welcome to the app'})

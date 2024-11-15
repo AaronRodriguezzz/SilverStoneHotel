@@ -39,16 +39,17 @@ function FrontPage(){
                             animate={{ opacity: 1 }}
                             transition={{ duration: 1, delay: 0.8 }}
                         >
-                            Relaxation & Tranquility
+                               Relaxation & Tranquility
                         </motion.h4>
-
-                        <motion.button
-                            initial={{ opacity: 0, scale: 0.9 }}
-                            animate={{ opacity: 1, scale: 1 }}
-                            transition={{ duration: .9, delay: .8 }}
-                        >
-                            BOOK NOW
-                        </motion.button>
+                        <Link to='/booknow'>
+                            <motion.button
+                                initial={{ opacity: 0, scale: 0.9 }}
+                                animate={{ opacity: 1, scale: 1 }}
+                                transition={{ duration: .9, delay: .8 }}
+                            >
+                                BOOK NOW
+                            </motion.button>
+                        </Link>
                     </div>
                 </div>
             </div>

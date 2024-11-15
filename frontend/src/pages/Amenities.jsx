@@ -27,7 +27,7 @@ const Amenities = () => {
         const interval = setInterval(() => {
             setDivIndex((prevIndex) => (prevIndex + 1) % photosArr.length); 
            
-        }, 2000);
+        }, 5000);
 
         return () => clearInterval(interval);
     },[divIndex])

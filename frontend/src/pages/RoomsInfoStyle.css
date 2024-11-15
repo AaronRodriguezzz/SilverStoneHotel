@@ -48,8 +48,8 @@
     font-weight: 400;
     word-spacing: 15px;
     letter-spacing: 5px;
-    margin-bottom: 30px;
- 
+    margin-bottom: 20px;
+    margin-left: 0px;
 }
 
 .roomInfo-container .room-info-txt h5{
@@ -59,7 +59,6 @@
     word-spacing: 5px;
     letter-spacing: 5px;
     margin: 10px;
- 
 }
 
 
@@ -85,7 +84,7 @@
     border-radius: 12px;
     margin-top: 20px;
     letter-spacing: 4px;
-    box-shadow: 0px 2px 5px 1px white;
+    box-shadow: 0px 1px 2px 1px white;
 }
 
 .roomInfo-container .room-info-txt button:hover{
@@ -93,48 +92,105 @@
     transition: transform .1s ease-out, background-color .5s ease-out;
 }
 
-@media (max-width: 720px) { 
-    .roomInfo-container .room-info-txt{
-        top: 60;
-        left: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
-    
-    
+@media (max-width: 1440px) { 
+
     .roomInfo-container .room-info-txt h2{
-        font-size: 65px;    
+        margin-top: 40px;
+        font-size: 50px;
+        word-spacing: 12px;
+        letter-spacing: 4px;
+    
     }
+    
+    .roomInfo-container .room-info-txt h5{
+        font-size: 25px;
+    }
+    
     
     .roomInfo-container .room-info-txt p{
-        color: white;
-        font-size: 19px;
-        font-weight: 400;
-        word-spacing: 2px;
-        letter-spacing: 2px;
+        font-size: 18px;
         width: 60%;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
     }
     
     
     .roomInfo-container .room-info-txt button{
-        color: white;
-        background-color:#d3b23a;
-        font-size: 22px;
-        letter-spacing: 4px;
-        padding: 20px 40px 20px 40px;
-        border: none;
-        border-radius: 12px;
-        margin-top: 20px;
-        letter-spacing: 4px;
-        box-shadow: 0px 2px 5px 1px white;
+        font-size: 15px;
+        padding: 12px 20px 12px 20px;
     }
     
-    .roomInfo-container .room-info-txt button:hover{
-        background-color:#d3b23a80;
-        transition: transform .1s ease-out, background-color .5s ease-out;
+}
+
+
+@media (max-width: 1024px) { 
+    .roomInfo-container .room-info-txt h2{
+        margin-top: 10px;
+        font-size: 40px;
+    }
+    
+    .roomInfo-container .room-info-txt h5{
+        font-size: 22px;
+    }
+    
+    
+    .roomInfo-container .room-info-txt p{
+        font-size: 16px;
+    
     }
 }
+
+@media (max-width: 425px) { 
+
+    .roomInfo-container .room-info-txt{
+        top: 30%;
+        left: 0%;
+        text-align: center;
+    }
+
+    .roomInfo-container .room-info-txt h2{
+        margin-top: 10px;
+        font-size: 30px;
+    }
+    
+    .roomInfo-container .room-info-txt h5{
+        font-size: 22px;
+    }
+    
+    
+    .roomInfo-container .room-info-txt p{
+        font-size: 15px;    
+        margin: 0 auto;
+        width: 80%;
+    }
+}
+
+@media (max-width: 375px) { 
+
+    .roomInfo-container .room-info-txt{
+        top: 30%;
+        left: 0%;
+        text-align: center;
+    }
+
+    .roomInfo-container .room-info-txt h2{
+        margin-top: 10px;
+        font-size: 25px;
+    }
+    
+    .roomInfo-container .room-info-txt h5{
+        font-size: 20px;
+    }
+    
+    
+    .roomInfo-container .room-info-txt p{
+        font-size: 13px;    
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .roomInfo-container .room-info-txt button{
+        font-size: 13px;
+        padding: 10px 15px 10px 15px;
+    }
+}
+

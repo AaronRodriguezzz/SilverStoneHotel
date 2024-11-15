@@ -4,7 +4,9 @@ import LandingPage from './pages/LandingPage';
 import Restaurant from './pages/Restaurant';
 import RoomInfo from './pages/RoomsInfo';
 import Amenities from './pages/Amenities';
-
+import AdminLogin from './Admin/AdminUnprotected/AdminLogin';
+import BookNow from './pages/BookNow';
+import BookConfirm from './pages/RoomConfirmation';
 
 function App() {
   return (
@@ -31,6 +33,21 @@ function App() {
               exact path='/amenities'
               element={<Amenities />}
             />   
+
+            <Route 
+              exact path='/admin/login'
+              element={<AdminLogin />}
+            />   
+
+            <Route 
+              exact path='/booknow'
+              element={<BookNow />}
+            />  
+
+            <Route 
+              exact path='/booking/confirmation'
+              element={<BookConfirm />}
+            />    
 
           </Routes>
         </div>

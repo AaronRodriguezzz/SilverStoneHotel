@@ -1,4 +1,4 @@
-const RoomInfo = require('../Models/RoomsSchema');
+const RoomInfo = require('../../Models/HotelSchema/RoomsSchema');
 
 const renderRooms = async (req,res) => {
     const key = req.params.key;    

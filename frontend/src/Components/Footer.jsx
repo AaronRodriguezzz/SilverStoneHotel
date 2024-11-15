@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-
+import './FooterStyle.css'
 
 
 const footer = forwardRef((_, ref) => {
